@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .sora-font-100 {
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    .sora-font-200 {
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    .sora-font-300 {
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .sora-font-400 {
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .sora-font-500 {
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .sora-font-600 {
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    @apply sora-font-600
+}
+
+.content {
+    @apply sora-font-400
+}
+
+.btn {
+    @apply sora-font-500
+}
+
+.predict {
+    @apply sora-font-400
+}
+
+.features h1 {
+    @apply sora-font-600
+}
+
+.features p {
+    @apply sora-font-400
+}
+
+.started {
+    @apply sora-font-400
+}
+
+.started h1 {
+    @apply sora-font-600
+}
+
+.about {
+    @apply sora-font-400
+}
+
+.about h1 {
+    @apply sora-font-600
+}
+
+.predict {
+    @apply sora-font-400
+}
+
+.predict h1 {
+    @apply sora-font-600
+}
+
+.underline button {
+    color: red;
+    transition: all 0.7ms ease-in;
+    text-decoration: underline;
+}
+
+.logo-active {
+    transition: all 0.7ms ease-in;
+    color: red;
+}
