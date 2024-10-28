@@ -1,6 +1,6 @@
 // import React from 'react'
-import defaultImage from "D:/aidoctor/src/assets/default.svg"
-import githubImage from "D:/aidoctor/src/assets/github.svg"
+import defaultImage from "../../assets/default.svg"
+import githubImage from "../../assets/github.svg"
 
 function About() {
 

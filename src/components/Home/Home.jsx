@@ -2,8 +2,8 @@ import { useRef } from 'react'
 import 'animate.css';
 import { motion } from 'framer-motion';
 import { Link } from "react-router-dom"
-import aidoctorImage from "D:/aidoctor/src/assets/aidoctor.svg"
-import neuralNetworkImage from "D:/aidoctor/src/assets/neuranetwork.png"
+import aidoctorImage from "../../assets/aidoctor.svg"
+import neuralNetworkImage from "../../assets/neuranetwork.png"
 
 function Home() {
 
