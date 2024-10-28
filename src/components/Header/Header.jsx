@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className='flex justify-between items-center mt-6'>
       <NavLink
-        to="/"
+        to="/aidoctor"
         className={({ isActive }) => isActive ? "logo-active" : ""}
       >
         <h1 className='text-3xl font-bold animate__animated animate__fadeInDown'>AI Doctor</h1>
