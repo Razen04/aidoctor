@@ -51,6 +51,11 @@
     margin: 0;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
 .header {
     @apply sora-font-600
 }
