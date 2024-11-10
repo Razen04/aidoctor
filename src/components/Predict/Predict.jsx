@@ -1,10 +1,13 @@
 // import React from 'react'
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import spinnerLogo from '../../assets/spinner.svg'
 import symptomsList from "../../symptoms.json"
 import Report from "../Report/Report"
 
 function Predict() {
+
+    const [showSpinner, setShowSpinner] = useState(false)
 
     const [symptoms, setSymptoms] = useState([])
     const [patientDetails, setPatientDetails] = useState({
@@ -41,6 +44,7 @@ function Predict() {
     }
 
     const predictDisease = async () => {
+        setShowSpinner(true)
         console.log(patientDetails.symptoms)
         try {
             const response = await fetch('http://localhost:3000/predict-disease', {
@@ -194,7 +198,10 @@ function Predict() {
                     </motion.button>
                 </div>
             </div>
-            {diseasePredicted.predictions && <Report patientDetails={patientDetails} diseasePredicted={diseasePredicted}/>}
+            <div className="relative">
+                {diseasePredicted.predictions ? <Report patientDetails={patientDetails} diseasePredicted={diseasePredicted} /> : showSpinner?  <img src={spinnerLogo} alt="Spin Logo" className="w-20 absolute top-1/2 left-1/2 text-center mt-8" /> : null}
+            </div>
+            
         </div>
     )
 }
