@@ -44,6 +44,7 @@ function Predict() {
     }
 
     const predictDisease = async () => {
+        setDiseasePredicted([])
         setShowSpinner(true)
         console.log(patientDetails.symptoms)
         try {
