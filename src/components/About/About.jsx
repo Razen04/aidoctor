@@ -18,17 +18,17 @@ function About() {
         {
             name: "Anushka Keshri",
             githubUrl: "https://github.com/anu2005-debug",
-            position: "Researcher, Report Writer, Presentator"
+            position: "Researcher, Report Writer, UI/UX Designer"
         },
         {
             name: "Anushka Rajak",
             githubUrl: "https://github.com/Anuska-Rajak",
-            position: "Presentator and Backend Developer"
+            position: "Researcher and Backend Developer"
         },
         {
             name: "Shivam Shekhar",
             githubUrl: "https://github.com/Shivamshekharss",
-            position: "Designer, Researcher, Report Writer"
+            position: "Designer, Report Writer, Frontend"
         },
     ]
 

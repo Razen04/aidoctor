@@ -41,11 +41,9 @@ const Report = ({ patientDetails, diseasePredicted }) => {
                     <ol className="list-decimal ml-6 mt-4">
                         {diseasePredicted && diseasePredicted.predictions ? diseasePredicted.predictions.map((eachDisease) => (
                             <div className="diseases" key={eachDisease.disease}>
-                                <li className="font-semibold">{eachDisease.disease}</li>
+                                <li className="font-semibold">{eachDisease.disease} - {eachDisease.probability.toFixed(2)}%</li>
                                 <p>{eachDisease.description}</p>
                             </div>
-
-
                         )) : null}
                     </ol>
                 </div>
