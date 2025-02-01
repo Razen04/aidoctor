@@ -48,7 +48,7 @@ function Predict() {
         setShowSpinner(true)
         console.log(patientDetails.symptoms)
         try {
-            const response = await fetch('http://localhost:3000/predict-disease', {
+            const response = await fetch('https://aidoctor-backend.onrender.com/predict-disease', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
